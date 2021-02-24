@@ -1,0 +1,59 @@
+{
+  "name": "LicitacoesSeparacao",
+  "description": "Porto Seguro | Produção Diferenciada - Órgãos Públicos & Licitações | Separacão",
+  "main": "Main.xaml",
+  "dependencies": {
+    "iTextSharp": "[5.5.13.1]",
+    "Microsoft.Activities.Extensions": "[2.0.6.9]",
+    "PDFsharp": "[1.51.5185-beta]",
+    "UiPath.Excel.Activities": "[2.9.4-preview]",
+    "UiPath.Mail.Activities": "[1.9.4-preview]",
+    "UiPath.PDF.Activities": "[3.3.0]",
+    "UiPath.System.Activities": "[20.10.0-preview]",
+    "UiPath.UIAutomation.Activities": "[20.10.0-preview]",
+    "UiPath.Word.Activities": "[1.5.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "7f268778-fad4-4e6c-8e3c-9362ff7c6bff",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}

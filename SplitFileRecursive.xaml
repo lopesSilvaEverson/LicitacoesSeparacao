@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Activity mc:Ignorable="sap sap2010" x:Class="SplitFile" this:SplitFile.in_maxSize="950" this:SplitFile.in_filenameToSplit="teste.pdf" this:SplitFile.in_fileDirectoryPath="C:\Users\Administrator\Desktop\quebra" this:SplitFile.in_count="0" this:SplitFile.original_filename="teste.pdf" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_maxSize" Type="InArgument(x:Int32)" />
+    <x:Property Name="out_count" Type="OutArgument(x:Int32)" />
+    <x:Property Name="in_filenameToSplit" Type="InArgument(x:String)" />
+    <x:Property Name="in_fileDirectoryPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_count" Type="InArgument(x:Int32)" />
+    <x:Property Name="original_filename" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>624,801</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SplitFile_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="25">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="SplitFile" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="leftCount" />
+      <Variable x:TypeArguments="x:String" Name="leftFIle" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,134.5</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,134.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If Condition="[new System.IO.FileInfo(in_fileDirectoryPath + &quot;\&quot; + in_filenameToSplit ).Length &lt; in_maxSize * 1024]" sap:VirtualizedContainerService.HintSize="1226,1924" sap2010:WorkflowViewState.IdRef="If_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="426,349" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_fileDirectoryPath + &quot;\parte-&quot; + in_count.ToString + &quot;-&quot; + original_filename]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="384,157" sap2010:WorkflowViewState.IdRef="CopyFile_3" Overwrite="True" Path="[in_fileDirectoryPath + &quot;\&quot; + in_filenameToSplit]" />
+            <Assign sap:VirtualizedContainerService.HintSize="384,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[out_count]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[in_count]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="quebra arquivo em 2" sap:VirtualizedContainerService.HintSize="755,1776" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="rightCount" />
+              <Variable x:TypeArguments="x:String" Name="rightFilename" />
+              <Variable x:TypeArguments="x:String" Name="leftFilename" />
+              <Variable x:TypeArguments="x:Int32" Name="pdfTotalPage" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="[in_fileDirectoryPath + &quot;\&quot; + in_filenameToSplit]" sap:VirtualizedContainerService.HintSize="713,59" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_1" PageCount="[pdfTotalPage]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="713,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot; 1-&quot; + (cint(pdfTotalPage/2)).ToString]" />
+            <Assign sap:VirtualizedContainerService.HintSize="713,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[leftFilename]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[in_filenameToSplit + "leftFile.pdf"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="713,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[rightFilename]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[in_filenameToSplit + "rightFile.pdf"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <If Condition="[(cint(pdfTotalPage/2)) &gt; 0]" sap:VirtualizedContainerService.HintSize="713,235" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[in_fileDirectoryPath + &quot;\&quot; + in_filenameToSplit]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_2" OutputFileName="[in_fileDirectoryPath + &quot;\&quot;  +leftFilename]" Range="[&quot;1-&quot; + (cint(pdfTotalPage/2)).ToString]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </upap:ExtractPDFPageRange>
+              </If.Then>
+              <If.Else>
+                <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[in_fileDirectoryPath + &quot;\&quot; + in_filenameToSplit]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_4" OutputFileName="[in_fileDirectoryPath + &quot;\&quot;  +leftFilename]" Range="1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </upap:ExtractPDFPageRange>
+              </If.Else>
+            </If>
+            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_fileDirectoryPath + &quot;\&quot;  +leftFilename + &quot;2.pdf&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="713,157" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[in_fileDirectoryPath + &quot;\&quot;  +leftFilename]" />
+            <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[in_fileDirectoryPath + &quot;\&quot; + in_filenameToSplit]" sap:VirtualizedContainerService.HintSize="713,87" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_3" OutputFileName="[in_fileDirectoryPath + &quot;\&quot;  +rightFilename]" Range="[(cint(pdfTotalPage/2) +1).ToString + &quot; -End&quot;]" />
+            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_fileDirectoryPath + &quot;\&quot;  +rightFilename + &quot;au.pdf&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="713,157" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[in_fileDirectoryPath + &quot;\&quot;  +rightFilename]" />
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow left file" sap:VirtualizedContainerService.HintSize="713,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SplitFileRecursive.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_maxSize">
+                  <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="in_maxSize" />
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_count">
+                  <mva:VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="leftCount" />
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_filenameToSplit">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="leftFilename + &quot;2.pdf&quot;" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_fileDirectoryPath">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_fileDirectoryPath" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_count">
+                  <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="in_count" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="original_filename">
+                  <Literal x:TypeArguments="x:String">teste.pdf</Literal>
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow right file" sap:VirtualizedContainerService.HintSize="713,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SplitFileRecursive.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_maxSize">
+                  <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="in_maxSize" />
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_count">
+                  <mva:VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="rightCount" />
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_filenameToSplit">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rightFilename + &quot;au.pdf&quot;" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_fileDirectoryPath">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_fileDirectoryPath" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_count">
+                  <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="leftCount + 1" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="original_filename">
+                  <Literal x:TypeArguments="x:String">teste.pdf</Literal>
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="Delete_2" Path="[in_fileDirectoryPath + &quot;\&quot;  +rightFilename + &quot;au.pdf&quot;]" />
+            <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="Delete_3" Path="[in_fileDirectoryPath + &quot;\&quot;  +leftFilename + &quot;2.pdf&quot;]" />
+            <Assign sap:VirtualizedContainerService.HintSize="713,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[out_count]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[rightCount]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </If.Else>
+      </If>
+    </FlowStep>
+  </Flowchart>
+</Activity>

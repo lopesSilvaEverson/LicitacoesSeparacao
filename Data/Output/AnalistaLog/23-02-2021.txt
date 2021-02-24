@@ -1,0 +1,20 @@
+[02/23/2021 08:47:01.4900] Inicializacao do robo
+[02/23/2021 08:48:17.5713] Carregando relatorio
+[02/23/2021 08:48:19.2732] Tem dados para processar?
+[02/23/2021 08:48:19.2862] SIM
+[02/23/2021 08:48:19.3091] Processando processo numero 28778/2020
+[02/23/2021 08:48:19.3251] Essa nao eh a ultima linha do processo, verificar se o corretor eh o escolhido e ir para a prox linha
+[02/23/2021 08:48:19.3380] nao era o corretor escolhido
+[02/23/2021 08:48:19.3520] Processa a proxima linha do relatorio. Linha 2
+[02/23/2021 08:48:19.3700] Processando processo numero 28778/2020
+[02/23/2021 08:48:19.3789] Essa nao eh a ultima linha do processo, verificar se o corretor eh o escolhido e ir para a prox linha
+[02/23/2021 08:48:19.3906] nao era o corretor escolhido
+[02/23/2021 08:48:19.4006] Processa a proxima linha do relatorio. Linha 3
+[02/23/2021 08:48:19.4245] Processando processo numero 28778/2020
+[02/23/2021 08:48:19.4435] Essa nao eh a ultima linha do processo, verificar se o corretor eh o escolhido e ir para a prox linha
+[02/23/2021 08:48:19.4604] Era o corretor escolhido
+[02/23/2021 08:48:19.4714] Processa a proxima linha do relatorio. Linha 4
+[02/23/2021 08:48:19.4924] Processando processo numero 28770/2020
+[02/23/2021 08:48:19.5063] essa eh ultima linha do processo, processa a prox
+[02/23/2021 08:48:19.5203] Le as tabelas de parametrizacao, para realizar o processamento
+[02/23/2021 08:49:05.5750] Criar pasta de destino

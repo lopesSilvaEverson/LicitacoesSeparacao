@@ -1,0 +1,2 @@
+[02/22/2021 10:45:07.5565] Processing Transaction Number: 1
+[02/22/2021 10:46:23.6739] System exception. Retry: 0. Access to the path 'C:\Users\Administrator\Documents\licitacoes\Analistas/_Fabio/2021/Pregão Presencial/28778 - MUNICIPIO DE PARDINHO' is denied. at Source: Create Folder

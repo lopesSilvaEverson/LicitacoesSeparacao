@@ -1,0 +1,31 @@
+[12/21/2020 11:17:45.9522] Processing Transaction Number: 1
+[12/21/2020 11:17:47.3542] Business rule exception.Nao separado, status do IItem diferente de 'Separar'
+[12/21/2020 11:17:48.9581] Processing Transaction Number: 5
+[12/21/2020 11:17:49.3161] Business rule exception.Nao separado, status do IItem diferente de 'Separar'
+[12/21/2020 11:17:49.7731] Processing Transaction Number: 6
+[12/21/2020 11:17:50.2001] Business rule exception.Nao separado, status do IItem diferente de 'Separar'
+[12/21/2020 11:19:57.3874] Processing Transaction Number: 1
+[12/21/2020 11:20:03.2223] Transaction Successful.
+[12/21/2020 11:20:05.7941] Processing Transaction Number: 5
+[12/21/2020 11:20:10.0003] Transaction Successful.
+[12/21/2020 11:20:12.1553] Processing Transaction Number: 6
+[12/21/2020 11:20:15.3211] Transaction Successful.
+[12/21/2020 11:45:25.7594] Processing Transaction Number: 1
+[12/21/2020 11:46:24.4475] Processing Transaction Number: 1
+[12/21/2020 11:46:49.6584] Transaction Successful.
+[12/21/2020 11:46:51.9450] Processing Transaction Number: 5
+[12/21/2020 11:47:11.2956] Transaction Successful.
+[12/21/2020 11:47:13.2002] Processing Transaction Number: 6
+[12/21/2020 11:47:30.6091] Transaction Successful.
+[12/21/2020 11:50:15.3682] Processing Transaction Number: 1
+[12/21/2020 11:50:39.4717] Transaction Successful.
+[12/21/2020 11:50:41.6962] Processing Transaction Number: 5
+[12/21/2020 11:51:04.0838] Transaction Successful.
+[12/21/2020 11:51:05.9517] Processing Transaction Number: 6
+[12/21/2020 11:51:21.9235] Transaction Successful.
+[12/21/2020 12:06:57.1674] Processing Transaction Number: 1
+[12/21/2020 12:07:23.3927] Transaction Successful.
+[12/21/2020 12:07:26.7048] Processing Transaction Number: 5
+[12/21/2020 12:07:49.1068] Transaction Successful.
+[12/21/2020 12:07:52.8614] Processing Transaction Number: 6
+[12/21/2020 12:08:10.3828] Transaction Successful.

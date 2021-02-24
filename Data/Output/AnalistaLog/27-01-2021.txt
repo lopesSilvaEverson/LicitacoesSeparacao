@@ -1,0 +1,19 @@
+[01/27/2021 03:33:36.4306] Inicializacao do robo
+[01/27/2021 03:33:37.7489] Carregando relatorio
+[01/27/2021 03:33:38.7210] Tem dados para processar?
+[01/27/2021 03:33:38.7523] SIM
+[01/27/2021 03:33:38.7835] Processando processo numero 28778/2020
+[01/27/2021 03:33:38.7835] Essa nao eh a ultima linha do processo, verificar se o corretor eh o escolhido e ir para a prox linha
+[01/27/2021 03:33:38.7999] nao era o corretor escolhido
+[01/27/2021 03:33:38.8156] Processa a proxima linha do relatorio. Linha 2
+[01/27/2021 03:33:38.8313] Processando processo numero 28778/2020
+[01/27/2021 03:33:38.8469] Essa nao eh a ultima linha do processo, verificar se o corretor eh o escolhido e ir para a prox linha
+[01/27/2021 03:33:38.8469] nao era o corretor escolhido
+[01/27/2021 03:33:38.8693] Processa a proxima linha do relatorio. Linha 3
+[01/27/2021 03:33:38.8850] Processando processo numero 28778/2020
+[01/27/2021 03:33:38.8850] Essa nao eh a ultima linha do processo, verificar se o corretor eh o escolhido e ir para a prox linha
+[01/27/2021 03:33:38.9319] Era o corretor escolhido
+[01/27/2021 03:33:38.9319] Processa a proxima linha do relatorio. Linha 4
+[01/27/2021 03:33:38.9631] Processando processo numero 28770/2020
+[01/27/2021 03:33:38.9631] essa eh ultima linha do processo, processa a prox
+[01/27/2021 03:33:38.9794] Le as tabelas de parametrizacao, para realizar o processamento

@@ -1,0 +1,18 @@
+[02/24/2021 10:02:55.3158] Processing Transaction Number: 1
+[02/24/2021 10:18:11.6425] Processing Transaction Number: 1
+[02/24/2021 10:18:19.3304] Transaction Successful.
+[02/24/2021 10:18:22.2821] Processing Transaction Number: 5
+[02/24/2021 10:18:25.1212] Transaction Successful.
+[02/24/2021 10:18:56.0524] Processing Transaction Number: 6
+[02/24/2021 10:18:58.2923] Transaction Successful.
+[02/24/2021 10:34:00.8136] Processing Transaction Number: 1
+[02/24/2021 10:35:10.0028] Processing Transaction Number: 1
+[02/24/2021 10:35:22.6845] Transaction Successful.
+[02/24/2021 10:35:27.7653] Processing Transaction Number: 5
+[02/24/2021 10:35:32.6473] Transaction Successful.
+[02/24/2021 10:36:40.7888] Processing Transaction Number: 1
+[02/24/2021 10:36:59.2096] Business rule exception.Nao separado, status do IItem diferente de 'Separar'
+[02/24/2021 10:37:04.8287] Processing Transaction Number: 5
+[02/24/2021 10:37:12.8426] Business rule exception.Nao separado, status do IItem diferente de 'Separar'
+[02/24/2021 10:37:18.7076] Processing Transaction Number: 6
+[02/24/2021 10:37:33.9862] Transaction Successful.
